@@ -1,0 +1,152 @@
+.indexTop
+    position fixed
+    left 0
+    top 0
+    z-index 8
+    width 100%
+    .header
+        width 100%
+        height 87.97px
+        box-sizing border-box
+        padding 16px 30px
+        display flex
+        align-items center
+        &>a
+          width 138px
+          height 39.98px
+          margin-right 20px
+          &>img 
+            width 100%
+            height 100%
+        .search
+          flex 1
+          height 100%
+          background #ededed
+          line-height 56px
+          text-align center
+          color #666
+          border-radius 10px
+          display flex
+          justify-content center
+          align-items center
+          .fdj
+            width 27.984px
+            height 27.984px
+            background url('../../../../static/image/fdj.png') no-repeat;
+            background-size 100%
+            margin-right 10px
+        .login
+          width 72px
+          height 37.984px
+          line-height 37.984px
+          text-align center
+          margin-left 16px
+          border 1Px solid red 
+          color red
+          border-radius 10px
+    .headerTagWarp
+        width 100%
+        height 60px
+        line-height 60px
+        position relative
+        overflow hidden
+        .headerTag
+          display inline-block
+          white-space nowrap
+          height 100%
+          padding 0 30px
+          .headerTagItem
+            padding 0 16px
+            color #333
+            font-size 28px
+            box-sizing border-box
+            position relative
+            margin 0 8px
+            display inline-block
+            &.active
+              &::after
+                content ''
+                position absolute 
+                left 0
+                bottom 0
+                width 100%
+                height 3.98px
+                background red
+            &:last-of-type
+              margin-right 120px
+        .tagMask
+          position fixed 
+          top 88px
+          right 0
+          width 159.98px
+          height 60px
+          z-index 99
+          display flex
+          .left
+            width 60px
+            height 60px
+            background-image: linear-gradient(to right,rgba(255,255,255,0) 0,#fff 50%,#fff 100%);
+            // background white
+          .right 
+            width 99.98px
+            height 60px
+            background white
+            // position fixed
+            .jiantou
+              width 30px
+              height 30px
+              background url('../../../../static/image/jiantou1.png') no-repeat white
+              background-size 100%
+              margin 0 auto
+              margin-top 15px
+              transition all 1s
+              &.active
+                transform rotate(180deg)
+.mask
+      position absolute 
+      left 0
+      top 87.97px
+      width 100%
+      height calc(100vh - 87.97px)
+      z-index 9
+      background rgba(0,0,0,0.3)
+      .maskTop
+        width 100%
+        height 60px
+        background white
+        padding-left 30px
+        line-height 60px
+        font-size 28px
+      .maskBottom
+        width 100%
+        height 287.953px
+        padding-top 24px
+        background white
+        display flex
+        flex-wrap wrap
+        .maskBottomItem
+          width 148px
+          height 54px
+          line-height 54px
+          text-align center
+          border 1Px solid black
+          margin 0 0 40px 30px 
+          &.active
+            border 1Px solid red
+.main
+    width 100%
+    margin-top 147.97px
+    margin-bottom 98px
+    .swiper-container
+      white-space nowrap
+      width 100%
+      height 296px
+      .swiper-slide
+          width 100%
+          height 100%
+          &>img
+            width 100%
+            height 100%
+        .van-swipe__indicator
+          width 39.98px
+          height 3.98px
